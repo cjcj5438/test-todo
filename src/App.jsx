@@ -36,6 +36,9 @@ function App() {
   return (
     <div className="app">
       <div className="todo-container">
+        <div className="smoke-banner">
+          🤖 AA SWARM SMOKE - AUTOMATED TESTING 🤖
+        </div>
         <h1>Todo List</h1>
 
         <form onSubmit={handleAddTodo} className="add-form">
