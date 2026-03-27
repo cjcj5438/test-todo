@@ -40,6 +40,7 @@ function App() {
           🤖 AA SWARM SMOKE - AUTOMATED TESTING 🤖
         </div>
         <h1>Todo List</h1>
+        <p className="hint-text">Swarm path verified.</p>
 
         <form onSubmit={handleAddTodo} className="add-form">
           <input
