@@ -2,8 +2,10 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
+  console.log('AA13 debug')
   const [todos, setTodos] = useState([])
   const [inputValue, setInputValue] = useState('')
+  const aa12MissingVar = '修复成功 - 未定义变量已正确定义'
 
   const handleAddTodo = (e) => {
     e.preventDefault()
@@ -40,7 +42,18 @@ function App() {
           🤖 AA SWARM SMOKE - AUTOMATED TESTING 🤖
         </div>
         <h1>Todo List</h1>
-        <p className="hint-text">Swarm path verified.</p>
+        <p className="hint-text">AA direct swarm ok.</p>
+        <div className="aa10-retry-review">
+          🔄 AA10 Retry Review Reset: 请重新审查并确认修改内容
+        </div>
+
+        <div className="aa12-repair-loop">
+          🚨 AA12 Repair Loop Test: {aa12MissingVar} - 这里故意引用未定义变量制造错误
+        </div>
+
+        <div className="aa13-repair-loop">
+          AA13 repair loop passed.
+        </div>
 
         <form onSubmit={handleAddTodo} className="add-form">
           <input
@@ -84,6 +97,7 @@ function App() {
         {todos.length === 0 && (
           <p className="empty-state">No todos yet. Add your first todo above!</p>
         )}
+        <div className="version-info">v1.0.0</div>
       </div>
     </div>
   )
